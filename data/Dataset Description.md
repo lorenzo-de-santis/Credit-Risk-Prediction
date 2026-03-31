@@ -4,26 +4,25 @@ The dataset is used to predict credit risk (default within 2 years).
 
 **Target variable**
 
-* `SeriousDlqin2yrs`: Whether the borrower experienced 90+ days delinquency (binary)
+* **SeriousDlqin2yrs** Person experienced 90 days past due delinquency or worse (Y/N) (this is your target!)
 
-**Key features**
+**Explanatory variables**
+* **RevolvingUtilizationOfUnsecuredLines** Total balance on credit cards and personal lines of credit except real estate and no installment debt like car loans divided by the sum of credit limits (percentage)
 
-* `RevolvingUtilizationOfUnsecuredLines`: Credit utilization ratio
-* `Age`: Borrower age
-* `DebtRatio`: Monthly debt payments over income
-* `MonthlyIncome`: Borrower monthly income
+* **Age** Age of borrower in years (integer)
 
-**Delinquency history**
+* **NumberOfTime3059DaysPastDueNotWorse** Number of times borrower has been 30-59 days past due but no worse in the last 2 years (integer)
 
-* `NumberOfTime30-59DaysPastDueNotWorse`
-* `NumberOfTime60-89DaysPastDueNotWorse`
-* `NumberOfTimes90DaysLate`
+* **DebtRatio** Monthly debt payments, alimony, living costs divided by monthly gross income (percentage)
 
-**Credit profile**
+* **MonthlyIncome** Monthly income (real)
 
-* `NumberOfOpenCreditLinesAndLoans`
-* `NumberRealEstateLoansOrLines`
+* **NumberOfOpenCreditLinesAndLoans** Number of open loans (installment like car loan or mortgage) and lines of credit (e.g. credit cards) (integer)
 
-**Household**
+* **NumberOfTimes90DaysLate** Number of times borrower has been 90 days or more past due (integer)
 
-* `NumberOfDependents`
+* **NumberRealEstateLoansOrLines** Number of mortgage and real estate loans including home equity lines of credit (integer)
+
+* **NumberOfTime60-89DaysPastDueNotWorse** Number of times borrower has been 60-89 days past due but no worse in the last 2 years (integer)
+
+* **NumberOfDependents** Number of dependents in family excluding themselves (spouse, children etc.) (integer)
